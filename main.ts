@@ -1,3 +1,4 @@
+servos.P0.setAngle(10)
 basic.forever(function () {
-    pins.analogWritePin(AnalogPin.P0, 1023)
+	
 })
