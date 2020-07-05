@@ -3,13 +3,13 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "servo": "github:ard-dev/pxt-servo-import#master"
+        "radio": "*"
     },
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md"
+        "README.md",
+        "servos.ts"
     ],
     "testFiles": [
         "test.ts"
@@ -17,5 +17,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
