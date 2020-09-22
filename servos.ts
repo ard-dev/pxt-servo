@@ -20,7 +20,7 @@ namespace servos {
     //% blockId=servossetangle block="setze Winkel von Servo an %servo auf %degrees=protractorPicker °"
     //% degrees.defl=0
     export function setAngle(pin: AnalogPin,  degrees: number ): void {
-        const duration = Math.map(Math.clamp(0, 130, degrees), 0, 130, 42, 111);
+        const duration = Math.map(Math.clamp(0, 130, degrees), 0, 130, 111, 42);
         pins.analogWritePin(pin, duration)
     }
     
