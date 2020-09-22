@@ -17,10 +17,11 @@ namespace servos {
      * @param grad gewünschter Winkel des Motors
      */
     
-    //% blockId=servossetangle block="setze Winkel von Servo an %servo auf %degrees=protractorPicker °"
+    //% blockId=servossetangle block="setze Winkel von Servo an %servo auf %degrees °"
     //% degrees.defl=0
+    //% degrees.min=-70 degrees.max=70
     export function setAngle(pin: AnalogPin,  degrees: number ): void {
-        const duration = Math.map(Math.clamp(0, 130, degrees), 0, 130, 111, 42);
+        const duration = Math.map(Math.clamp(-70, 70, degrees), -70, 70, 111, 42);
         pins.analogWritePin(pin, duration)
     }
     
